@@ -1,0 +1,32 @@
+@import "./style.css";
+
+.films-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a.film {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  max-width: 220px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.359);
+  }
+}
+
+.film-wrapper {
+  position: relative;
+
+  i {
+    position: absolute;
+    bottom: 2rem;
+    left: 10.5rem;
+  }
+}

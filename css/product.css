@@ -1,0 +1,41 @@
+@import "./style.css";
+
+img {
+  max-width: 30%;
+}
+
+.film-detail {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.359);
+  padding: 1rem;
+}
+
+.film {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .film-detail {
+    flex-direction: column;
+  }
+}

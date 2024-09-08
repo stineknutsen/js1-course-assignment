@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta type="description" content="Square Eyes" />
+    <title>Square Eyes | Home</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/a5e5d5dde4.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="js/script.mjs" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <a href="index.html"
+          ><img
+            src="logo/squareeyes-logo.png"
+            alt="Square Eyes Logo"
+            class="logo"
+        /></a>
+      </nav>
+      <div class="cart-indicator">
+        <a href="checkout/index.html">
+          <i class="fa-solid fa-shopping-cart"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1>Home</h1>
+        <input id="search" placeholder="Search..." />
+        <select id="genre">
+          <option value="">Select genre</option>
+          <option value="Action">Action</option>
+          <option value="Horror">Horror</option>
+          <option value="Kids">Kids</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Drama">Drama</option>
+        </select>
+        <div id="films-container" class="films-container">
+          <p>Loading films...</p>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
