@@ -1,7 +1,7 @@
 import { fetchFilms } from "../../api/films/fetchFilms.js";
 import { displayMessage } from "../../ui/shared/displayMessage.js";
 import { createFilmsHtml } from "../../ui/films/createFilmsHtml.js";
-import { searchFilms } from "./filterFilms.js";
+import { searchFilms } from "./searchFilms.js";
 import { handleGenreChange } from "./handleGenreChange.js";
 import { handleCartIconClick } from "../cart/handleCartIconClick.js";
 import { handleCartCountDisplay } from "../cart/handleCartCountDisplay.js";

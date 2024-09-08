@@ -52,6 +52,7 @@ export function createCartHtml(container, cart) {
   });
 
   const totalPrice = document.createElement("p");
+  totalPrice.classList.add("total-price");
   totalPrice.textContent = `Total price: ${getTotalPrice(cart)} kr`;
   container.append(totalPrice);
 

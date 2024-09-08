@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
+  padding-top: 20px;
 }
 
 img {
@@ -15,6 +16,7 @@ a.film {
   text-decoration: none;
   padding: 1rem;
   max-width: 220px;
+  height: 100%;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.359);

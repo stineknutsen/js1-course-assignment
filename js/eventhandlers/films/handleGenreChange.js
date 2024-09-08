@@ -1,4 +1,5 @@
 import { createFilmsHtml } from "../../ui/films/createFilmsHtml.js";
+import { handleCartIconClick } from "../cart/handleCartIconClick.js";
 
 export function handleGenreChange(filmsArray) {
   const genreSelect = document.querySelector("#genre");
@@ -17,5 +18,6 @@ export function handleGenreChange(filmsArray) {
     });
 
     createFilmsHtml("#films-container", filteredFilms);
+    handleCartIconClick();
   }
 }
