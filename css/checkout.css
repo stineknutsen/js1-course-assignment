@@ -39,6 +39,10 @@ img {
   background-color: white;
 }
 
+.btn-primary {
+  float: right;
+}
+
 @media screen and (max-width: 600px) {
   .cart-item {
     grid-template-columns: 1fr;

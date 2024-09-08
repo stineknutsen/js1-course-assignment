@@ -57,5 +57,8 @@ export function createCartHtml(container, cart) {
   container.append(totalPrice);
 
   const button = confirmationButton();
-  container.append(button);
+  const buttonDiv = document.createElement("div");
+  buttonDiv.classList.add("button-div");
+  buttonDiv.append(button);
+  container.append(buttonDiv);
 }
