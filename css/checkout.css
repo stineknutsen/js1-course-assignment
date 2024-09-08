@@ -1,5 +1,9 @@
 @import "./style.css";
 
+.message {
+  text-align: left;
+}
+
 .cart-container {
   display: flex;
   flex-direction: column;
