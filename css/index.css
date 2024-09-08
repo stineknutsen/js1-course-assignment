@@ -2,7 +2,7 @@
 
 .films-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 }
 
@@ -23,10 +23,35 @@ a.film {
 
 .film-wrapper {
   position: relative;
+  max-width: 230px;
 
   i {
     position: absolute;
     bottom: 2rem;
     left: 10.5rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .films-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .films-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .films-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .films-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
