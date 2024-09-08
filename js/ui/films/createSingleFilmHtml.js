@@ -1,4 +1,4 @@
-import { createCartIcon } from "../cart/createCartIcon.mjs";
+import { createCartIcon } from "../cart/createCartIcon.js";
 
 export function createSingleFilmHtml(container, film) {
   container.innerHTML = "";

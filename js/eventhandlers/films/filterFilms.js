@@ -1,4 +1,4 @@
-import { createFilmsHtml } from "../../ui/films/createFilmsHtml.mjs";
+import { createFilmsHtml } from "../../ui/films/createFilmsHtml.js";
 
 export function searchFilms(filmsArray) {
   const searchInput = document.querySelector("#search");

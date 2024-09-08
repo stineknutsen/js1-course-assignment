@@ -1,4 +1,4 @@
-import { isIdInCart } from "../../utils/cart.mjs";
+import { isIdInCart } from "../../utils/cart.js";
 
 export function createCartIcon(
   id,

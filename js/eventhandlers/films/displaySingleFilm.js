@@ -1,9 +1,9 @@
-import { fetchFilmById } from "../../api/films/fetchFilmById.mjs";
-import { createSingleFilmHtml } from "../../ui/films/createSingleFilmHtml.mjs";
-import { displayMessage } from "../../ui/shared/displayMessage.mjs";
-import { getQueryParam } from "../../utils/getParam.mjs";
-import { handleCartCountDisplay } from "../cart/handleCartCountDisplay.mjs";
-import { handleCartIconClick } from "../cart/handleCartIconClick.mjs";
+import { fetchFilmById } from "../../api/films/fetchFilmById.js";
+import { createSingleFilmHtml } from "../../ui/films/createSingleFilmHtml.js";
+import { displayMessage } from "../../ui/shared/displayMessage.js";
+import { getQueryParam } from "../../utils/getParam.js";
+import { handleCartCountDisplay } from "../cart/handleCartCountDisplay.js";
+import { handleCartIconClick } from "../cart/handleCartIconClick.js";
 
 export async function displaySingleFilm() {
   const id = getQueryParam("id");

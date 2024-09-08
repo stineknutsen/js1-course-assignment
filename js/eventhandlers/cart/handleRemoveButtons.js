@@ -1,5 +1,5 @@
-import { removeFromCart } from "../../utils/cart.mjs";
-import { displayCart } from "./displayCart.mjs";
+import { removeFromCart } from "../../utils/cart.js";
+import { displayCart } from "./displayCart.js";
 
 export function handleRemoveButtons() {
   const removeButtons = document.querySelectorAll(

@@ -1,4 +1,4 @@
-import { squareEyesUrl } from "../../constants/api.mjs";
+import { squareEyesUrl } from "../../constants/api.js";
 
 export async function fetchFilms() {
   const response = await fetch(squareEyesUrl);

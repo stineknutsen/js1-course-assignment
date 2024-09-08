@@ -1,4 +1,4 @@
-import { createFilmsHtml } from "../../ui/films/createFilmsHtml.mjs";
+import { createFilmsHtml } from "../../ui/films/createFilmsHtml.js";
 
 export function handleGenreChange(filmsArray) {
   const genreSelect = document.querySelector("#genre");

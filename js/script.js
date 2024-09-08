@@ -1,6 +1,6 @@
-import { displayFilms } from "./eventhandlers/films/displayFilms.mjs";
-import { displaySingleFilm } from "./eventhandlers/films/displaySingleFilm.mjs";
-import { displayCart } from "./eventhandlers/cart/displayCart.mjs";
+import { displayFilms } from "./eventhandlers/films/displayFilms.js";
+import { displaySingleFilm } from "./eventhandlers/films/displaySingleFilm.js";
+import { displayCart } from "./eventhandlers/cart/displayCart.js";
 
 function router() {
   const { pathname } = window.location;

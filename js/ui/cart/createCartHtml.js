@@ -1,5 +1,5 @@
-import { displayMessage } from "../shared/displayMessage.mjs";
-import { getTotalPrice, confirmationButton } from "../../utils/cart.mjs";
+import { displayMessage } from "../shared/displayMessage.js";
+import { getTotalPrice, confirmationButton } from "../../utils/cart.js";
 
 export function createCartHtml(container, cart) {
   if (cart.length === 0) {

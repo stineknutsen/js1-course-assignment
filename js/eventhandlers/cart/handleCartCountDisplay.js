@@ -1,4 +1,4 @@
-import { getCart } from "../../utils/cart.mjs";
+import { getCart } from "../../utils/cart.js";
 
 export function handleCartCountDisplay() {
   const cartCount = document.querySelector("#cart-count");

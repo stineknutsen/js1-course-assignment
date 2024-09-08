@@ -1,5 +1,5 @@
-import { addToCart, isIdInCart, removeFromCart } from "../../utils/cart.mjs";
-import { handleCartCountDisplay } from "./handleCartCountDisplay.mjs";
+import { addToCart, isIdInCart, removeFromCart } from "../../utils/cart.js";
+import { handleCartCountDisplay } from "./handleCartCountDisplay.js";
 
 export function handleCartIconClick() {
   const cartIcons = document.querySelectorAll("i[data-action='cart']");
