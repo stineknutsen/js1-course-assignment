@@ -1,0 +1,25 @@
+@import "./style.css";
+
+.confirmation-message {
+  text-align: center;
+  padding: 8rem 20rem;
+  background-color: rgba(0, 0, 0, 0.359);
+}
+
+@media screen and (max-width: 1000px) {
+  .confirmation-message {
+    padding: 6rem 10rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .confirmation-message {
+    padding: 4rem 5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .confirmation-message {
+    padding: 4rem 2rem;
+  }
+}
