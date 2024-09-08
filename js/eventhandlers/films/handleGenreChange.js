@@ -10,12 +10,13 @@ export function handleGenreChange(filmsArray) {
 
   function respondToGenreChange(event) {
     const selectedGenre = event.target.value;
+    let filteredFilms;
 
-    const filteredFilms = filmsArray.filter((film) => {
-      if (film.genre === selectedGenre) {
-        return true;
-      }
-    });
+    if (selectedGenre) {
+      filteredFilms = filmsArray.filter((film) => film.genre === selectedGenre);
+    } else {
+      filteredFilms = filmsArray;
+    }
 
     createFilmsHtml("#films-container", filteredFilms);
     handleCartIconClick();
