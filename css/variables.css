@@ -1,0 +1,11 @@
+:root {
+  --color-background: linear-gradient(to bottom, #35006a, #000);
+  --color-box: rgba(0, 0, 0, 0.359);
+  --color-text: #ffffff;
+  --color-icons: #ffffff;
+  --color-cart-icon-background: #000;
+  --color-white: #ffffff;
+  --color-red: red;
+  --color-light-red: rgb(255, 114, 114);
+  --color-error-message: maroon;
+}

@@ -1,9 +1,6 @@
-@import "./style.css";
-
 .confirmation-message {
   text-align: center;
   padding: 8rem 20rem;
-  background-color: rgba(0, 0, 0, 0.359);
 }
 
 @media screen and (max-width: 1000px) {

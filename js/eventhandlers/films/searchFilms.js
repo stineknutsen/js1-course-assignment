@@ -11,7 +11,7 @@ export function searchFilms(filmsArray) {
     const searchValue = event.target.value.trim().toLowerCase();
 
     const searchFilms = filmsArray.filter((film) => {
-      if (film.title.toLowerCase().startsWith(searchValue)) {
+      if (film.title.toLowerCase().includes(searchValue)) {
         return true;
       }
     });

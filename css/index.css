@@ -1,14 +1,8 @@
-@import "./style.css";
-
 .films-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   padding-top: 20px;
-}
-
-img {
-  max-width: 100%;
 }
 
 a.film {
@@ -19,11 +13,11 @@ a.film {
   height: 100%;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.359);
+    background-color: var(--color-box);
   }
 }
 
-.film-wrapper {
+.index-film-wrapper {
   position: relative;
   max-width: 230px;
 
@@ -31,6 +25,10 @@ a.film {
     position: absolute;
     bottom: 2rem;
     left: 10.5rem;
+  }
+
+  img {
+    max-width: 100%;
   }
 }
 

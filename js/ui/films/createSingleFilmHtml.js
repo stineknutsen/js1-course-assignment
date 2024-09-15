@@ -1,4 +1,5 @@
 import { createCartIcon } from "../cart/createCartIcon.js";
+import { updatePageTitle } from "../../utils/updatePageTitle.js";
 
 export function createSingleFilmHtml(container, film) {
   container.innerHTML = "";
@@ -16,8 +17,10 @@ export function createSingleFilmHtml(container, film) {
     description,
   } = film;
 
+  updatePageTitle(title);
+
   const filmCard = document.createElement("div");
-  filmCard.classList.add("film");
+  filmCard.classList.add("film-card");
 
   const imageElement = document.createElement("img");
   imageElement.src = image.url;

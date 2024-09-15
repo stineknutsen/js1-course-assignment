@@ -1,20 +1,12 @@
 import { squareEyesUrl } from "../../constants/api.js";
 
 export async function fetchFilmById(filmId) {
-  const response = await fetch(squareEyesUrl);
+  const url = `${squareEyesUrl}/${filmId}`;
+  const response = await fetch(url);
 
   if (response.ok) {
-    const films = await response.json();
-    const filmsArray = films.data;
-
-    // Find the film by its id
-    const singleFilm = filmsArray.find((film) => film.id === filmId);
-
-    if (singleFilm) {
-      return singleFilm;
-    } else {
-      throw new Error(`Film with id ${filmId} not found`);
-    }
+    const json = await response.json();
+    return json.data;
   }
 
   throw new Error("Failed to fetch films");

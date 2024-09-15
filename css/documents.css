@@ -1,7 +1,5 @@
-@import "./style.css";
-
 main {
   margin-top: 20px;
   padding: 0 1rem;
-  background-color: rgba(0, 0, 0, 0.359);
+  background-color: var(--color-box);
 }

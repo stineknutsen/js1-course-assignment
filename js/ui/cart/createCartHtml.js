@@ -19,7 +19,7 @@ export function createCartHtml(container, cart) {
     cartCard.classList.add("cart-item");
 
     const filmDiv = document.createElement("div");
-    filmDiv.classList.add("film");
+    filmDiv.classList.add("cart-film");
 
     const imageElement = document.createElement("img");
     imageElement.src = image;

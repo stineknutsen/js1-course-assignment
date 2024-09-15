@@ -18,7 +18,7 @@ export function createFilmsHtml(container, filmsArray) {
     const { id, image, title, price, discountedPrice, onSale } = film;
 
     const filmWrapper = document.createElement("div");
-    filmWrapper.classList.add("film-wrapper");
+    filmWrapper.classList.add("index-film-wrapper");
 
     const filmCard = document.createElement("a");
     filmCard.classList.add("film");

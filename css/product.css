@@ -1,18 +1,17 @@
-@import "./style.css";
-
-img {
-  max-width: 30%;
-}
-
 .film-detail {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  background-color: rgba(0, 0, 0, 0.359);
   padding: 1rem;
+
+  img {
+    max-width: 30%;
+  }
 }
 
-.film {
+/* Her er det noe som ikke stemmer*/
+
+.film-card {
   margin-top: auto;
   display: flex;
   flex-direction: column;
@@ -31,11 +30,12 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  img {
-    max-width: 60%;
-    margin: 0 auto;
-  }
   .film-detail {
     flex-direction: column;
+
+    img {
+      max-width: 60%;
+      margin: 0 auto;
+    }
   }
 }
