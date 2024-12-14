@@ -7,12 +7,15 @@ function router() {
 
   switch (pathname) {
     case "/":
+    case "/index":
     case "/index.html":
       displayFilms();
       break;
+    case "/product/index":
     case "/product/index.html":
       displaySingleFilm();
       break;
+    case "/checkout/index":
     case "/checkout/index.html":
       displayCart();
       break;

@@ -32,13 +32,24 @@
 }
 
 .btn {
-  padding: 0 2%;
-  margin: 0 auto;
+  display: block;
+  width: 100px;
+  padding: 0.5rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
   background-color: var(--color-white);
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .btn-primary {
   float: right;
+  margin: 1rem;
 }
 
 @media screen and (max-width: 600px) {

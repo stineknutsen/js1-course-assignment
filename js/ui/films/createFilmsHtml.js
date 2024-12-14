@@ -24,6 +24,12 @@ export function createFilmsHtml(container, filmsArray) {
     filmCard.classList.add("film");
     filmCard.href = `/product/index.html?id=${id}`;
 
+    const imageWrapper = document.createElement("div");
+    imageWrapper.classList.add("image-wrapper");
+
+    const infoWrapper = document.createElement("div");
+    infoWrapper.classList.add("info-wrapper");
+
     const imageElement = document.createElement("img");
     imageElement.src = image.url;
 
@@ -47,8 +53,10 @@ export function createFilmsHtml(container, filmsArray) {
       onSale
     );
 
-    parent.append(filmWrapper);
+    imageWrapper.append(imageElement);
+    infoWrapper.append(titleElement, priceElement);
+    filmCard.append(imageWrapper, infoWrapper);
     filmWrapper.append(filmCard, cartIcon);
-    filmCard.append(imageElement, titleElement, priceElement);
+    parent.append(filmWrapper);
   });
 }
