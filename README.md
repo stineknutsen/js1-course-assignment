@@ -21,7 +21,7 @@ The goal for this assignment was to build a user-friendly site to browse and pur
 
 ## Getting Started
 
-1. Clone the repo
+1. Clone this repo
 
 2. Open the project in your browser
 
